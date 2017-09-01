@@ -1,4 +1,7 @@
 var http = require('http');
+var mongojs = require('mongojs');
+
+var db = mongojs(connectionString, [collections]);
 
 var port = (process.env.PORT || process.env.VCAP_APP_PORT || 8888);
 
